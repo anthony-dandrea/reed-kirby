@@ -9,5 +9,5 @@ fields:
     label: Title
     type:  text
   text:
-    label: Text
+    label: Text (http://getkirby.com/docs/content/text)
     type:  textarea

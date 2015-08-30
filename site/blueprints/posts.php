@@ -6,8 +6,5 @@ pages:
 files: false
 fields:
   title:
-    label: Title
+    label: Title (ignore)
     type:  text
-  text:
-    label: Text
-    type:  textarea

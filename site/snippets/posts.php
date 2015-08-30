@@ -1,6 +1,6 @@
 <h1>POSTS</h1>
 
-<?php $articles = page('posts')->children()->visible()->flip()->paginate(10) ?>
+<?php $articles = page('posts')->children()->visible()->paginate(5) ?>
 
 <?php foreach($articles as $article): ?>
 

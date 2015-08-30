@@ -1,7 +1,0 @@
-Title: Weekend Detroit Trip
-
-----
-
-Text:
-
-(image: 1_small.jpg link: 1_large.jpg)

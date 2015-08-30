@@ -1,0 +1,8 @@
+Title: Purchase Video
+
+----
+
+Text: 
+
+Order video (link: /product text: here)
+(image: REED_FLYER_FINAL.jpg alt: Reed Video image link: http://www.theportagetheater.com/event/831559-reed-video-film-by-phil-chicago/ height: 400)
