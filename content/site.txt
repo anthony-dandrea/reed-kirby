@@ -1,0 +1,17 @@
+Title: Reed Wheels
+
+----
+
+Author: Anthony D'Andrea & Austin Whiting
+
+----
+
+Description: Quality skateboard wheels. Est. 2012. Chicago
+
+----
+
+Keywords: Chicago, Denver, Wheels, Skate, Skateboard
+
+----
+
+Copyright: © 2012-(date: Year) by (link: https://github.com/anthony-dandrea text: Anthony D'Andrea) with (link: http://getkirby.com/ text: Kirby)

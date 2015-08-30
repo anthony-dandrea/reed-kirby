@@ -1,0 +1,13 @@
+Title: Foobar
+
+----
+
+Year: 2015
+
+----
+
+Text: foo
+
+----
+
+Tags: d
