@@ -1,0 +1,41 @@
+Title: Team
+
+----
+
+Text: 
+
+Pat Devine
+
+(image: patdevinebluntweb_large.jpg link: patdevinebluntweb_small.jpg)
+
+(youtube: https://www.youtube.com/watch?v=1jk4ddrmTCw)
+
+Marisa Dal Santo
+
+(image: marisa-dal-santo_small.jpg link: marisa-dal-santo_large.jpg)
+
+(youtube: https://www.youtube.com/watch?v=phoxuTVZ8gc)
+
+Ryan Chlumecky
+
+(image: ryan_small.jpg link: ryan_large.jpg)
+
+(youtube: https://www.youtube.com/watch?v=HVf2chbGA3U)
+
+Nicky Glaser
+
+(image: nicky_small.jpg link: nicky_large.jpg)
+
+(youtube: https://www.youtube.com/watch?v=Jq8yInwqbSw)
+
+Mike Krok
+
+(image: mike-krok_small.jpg link: mike-krok_large.jpg)
+
+(youtube: https://www.youtube.com/watch?v=eHT_3vOPO1Y)
+
+Dylan McCartin
+
+(image: dylan-mccartin_small.jpg link: dylan-mccartin_large.jpg)
+
+(youtube: https://www.youtube.com/watch?v=nK2yj_dBtkM)

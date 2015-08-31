@@ -1,12 +1,20 @@
 .DS_Store
+
+# Accounts
 /site/accounts
 /assets/avatars
-/thumbs/*
+
+# Contains license key
 /site/config
 
-.sass-cache
+# Node packages for gulp
 node_modules/
+
+# Sass
+.sass-cache
 assets/css/site.css.map
 assets/css/site.css
+
+# Ruby
 *.bundle
 Gemfile.lock

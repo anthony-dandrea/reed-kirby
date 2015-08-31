@@ -1,0 +1,165 @@
+// =======================================
+// Gloabl Mixins
+// =======================================
+
+@mixin btn-size($size, $padding) {
+  font-size: $size;
+  padding: $padding;
+}
+
+@mixin btn-color($background, $color) {
+  background: $background;
+  color: $color;
+  &:hover {
+    background: lighten($background, 10%);
+  }
+}
+
+@mixin transition($val...) {
+   -webkit-transition: $val;
+      -moz-transition: $val;
+        -o-transition: $val;
+           transition: $val;
+}
+
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+     -moz-transform: $transforms;
+     -ms-transform: $transforms;
+       -o-transform: $transforms;
+          transform: $transforms;
+}
+
+@mixin is-hidden($breakpoint) {
+  @include at-breakpoint($breakpoint) {
+    display: none;
+  }
+}
+
+@mixin is-visible($breakpoint) {
+  @include at-breakpoint($breakpoint) {
+    display: block;
+  }
+}
+
+// =============================================
+// Mixin to easily use font awesome icons
+// with css :before and :after
+// i.e. @include fa-icon('\f028');
+// =============================================
+@mixin fa-icon($icon) {
+  content: $icon;
+  font-family: $fontAwesome;
+}
+
+// =============================================
+// Make line-height equal to an element's height
+// =============================================
+@mixin line-and-height($height) {
+  height: $height;
+  line-height: $height - 2;
+}
+
+@mixin vertically-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+// =============================================
+// use to style placeholder text
+// across browsers
+// =============================================
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+@mixin list($type) {
+  // If you want a list with icons
+  @if $type == 'icon' {
+    li {
+      display: block;
+      font-size: $h5-default;
+      position: relative;
+      padding: $base-unit-quarter $base-unit * 1.5;
+    }
+    li:before {
+      padding-right: $base-unit-half;
+      position: absolute;
+      top: $base-unit-quarter;
+      left: 0;
+      @include fa-icon('\f00c');
+    }
+  }
+  // If you want an inline list
+  @if $type == 'inline' {
+    li {
+      display: inline-block;
+      float: left;
+      padding-right: $base-unit;
+    }
+  }
+  // If you want an inline list with vertical dividers
+  @if $type == 'inline-divider' {
+    li {
+      display: inline-block;
+      float: left;
+    }
+    li:after {
+      content: ' | ';
+      padding: 0 $base-unit-half;
+    }
+    li:last-child:after {
+      content: ' ';
+    }
+  }
+  // If you want a vertical, unstyled list
+  @if $type == 'unstyled' {
+    li {
+      position: relative;
+      display: block;
+      padding: $base-unit-quarter 0;
+    }
+  }
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin circle($width, $color) {
+  width: $width;
+  height: $width;
+  background: $color;
+  -webkit-border-radius: $width/2;
+     -moz-border-radius: $width/2;
+          border-radius: $width/2;
+}
+
+@mixin text-color($color) {
+  p, h1, h2, h3, h4, h5, h6, span, li {
+    color: $color;
+    &.blue {
+      color: $blue;
+    }
+    &.grey-med {
+      color: $grey-med;
+    }
+    .grey-med-lighten {
+      color: lighten($grey-med, 30%);
+    }
+    &.green {
+      color: #7abb7c;
+    }
+  }
+}

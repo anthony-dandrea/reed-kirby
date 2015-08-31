@@ -1,0 +1,83 @@
+Title: Dealers
+
+----
+
+Text:
+
+(link: http://www.upriseskateboards.com/ text: Uprise Skateshop target: _blank)
+1820 N. Milwaekee Ave.
+Chicago, IL 60647
+
+(link: http://pluskateboarding.com/ text: PLUSkateboarding target: _blank)
+33335 Grand River Ave.
+Farmington, MI 48336
+
+(link: http://www.windwardboardshop.com/ text: Windward Boardshop target: _blank)
+3317 N. Clark St.
+Chicago, IL 60657
+
+(link: http://www.iammodest.com/ text: Modest Skateshop target: _blank)
+7416 Madison St.
+Forest Park, IL 60130
+
+(link: http://faskates.com/ text: FA Skates target: _blank)
+113 W. Prospect Ave.
+Mt. Prospect, IL 60056
+
+(link: http://www.skyhighskateboardshop.com/ text: Sky High Skateshop target: _blank)
+2501 Howell Ave.
+Milwaukee, WI 53207
+
+(link: http://skateillinois.com/ text: Yeah! Boardshop target: _blank)
+148 Bartlett Plaza
+Bartlett, IL 60103
+
+(link: http://www.atlasskateboarding.com/ text: Atlas target: _blank)
+209 2nd Ave.
+San Mateo, CA 94401
+
+(link: http://citizenskatecafe.com/ text: Citizen Skate Cafe target: _blank)
+924 W. Wilson Ave.
+Chicago, IL 60640
+
+
+(link: http://smalltownskates.com/ text: SMLTWN Skates target: _blank)
+229 E. Lincoln Highway
+DeKalb, IL 60115
+
+(link: http://www.a2bboardshop.com/ text: A2B Board Shop target: _blank)
+34185 Highway 45
+Third Lake, IL 60030
+
+(link: http://exitphiladelphia.com/ text: Exit Skateshop target: _blank)
+825 N. 2nd St.
+Philadelphia, PA 19123
+
+(link: https://www.facebook.com/ShockwavesSkateshop text: Shockwaves target: _blank)
+111 1/2 W. North Street
+Normal, IL 61761
+
+(link: http://www.chiipss.com/ text: Chiipss target: _blank)
+10229 Joseph Campau
+Hamtramck, MI 48212
+
+(link: http://peopleskateandsnowboard.com/ text: People Skate and Snowboard target: _blank)
+3375 Orchard Lake Rd.
+Keego Harbor, MI 48320
+
+
+(link: http://creamcityskatepark.com/ text: Cream City Skatepark target: _blank)
+5560 N. Park Dr.
+Butler, WI 53007
+
+(link: http://www.thepremierstore.com/ text: Premier target: _blank)
+14 Weston St SE
+Grand Rapids, MI 49503
+
+(link: http://plusskateshop.com/Default.asp text: PLUS Skateshop target: _blank)
+186 Miracle Strip Pkwy SE
+Fort Walton Bch, FL 32548
+
+(link: http://www.a2bboardshop.com/ text: A2B Boardshop target: _blank)
+4238 N. Arlington Heights Rd.
+Arlington Heights, IL 60004

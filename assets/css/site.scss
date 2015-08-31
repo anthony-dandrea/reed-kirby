@@ -1,9 +1,25 @@
+// Import sass plugins
+@import 'compass';
+@import 'susy';
+@import 'breakpoint';
+
 // Import base
 @import 'base/variables';
 @import 'base/typography';
+@import 'base/extends';
+@import 'base/mixins';
+
+// Import foundation (only using the grid)
+@import 'vendor/foundation/settings';
+@import 'vendor/foundation';
+
+// Import layout
+@import 'layout/background';
+@import 'layout/main';
 
 // Import components
 @import 'components/iframe';
+
 
 body {
     background-color: #eee !important;

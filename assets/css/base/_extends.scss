@@ -1,0 +1,130 @@
+// =======================================
+// Extendable classes (.foo)
+// and placeholder selectors (%foo)
+// =======================================
+
+%full-width,
+.full-width {
+    width: 100%;
+}
+
+%vertical-align,
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+%hidden,
+.hidden {
+    display: none;
+}
+
+%hide-mobile,
+.hide-mobile {
+    display: none;
+    @include breakpoint($lap-medium, $no-query: '.lt-ie9') {
+        display: block;
+    }
+}
+
+%hide-desktop,
+.hide-desktop {
+    display: block;
+    @include breakpoint($lap-medium, $no-query: '.lt-ie9') {
+        display: none;
+    }
+}
+
+%center-align,
+.center-align {
+    text-align: center;
+}
+
+%right-align,
+.right-align {
+    text-align: right;
+}
+
+%left-align,
+.left-align {
+    text-align: left;
+}
+
+// =======================================
+// Silent, extendable box model objects
+// i.e. @extend %margin-bottom;
+// =======================================
+
+%margin-auto,
+.margin-auto {
+    margin: auto;
+}
+
+%margin-bottom,
+.margin-bottom {
+  margin-bottom: $base-unit;
+}
+
+%margin-top,
+.margin-top {
+  margin-top: $base-unit;
+}
+
+%margin-right,
+.margin-right {
+    margin-right: $base-unit;
+}
+
+%margin-left,
+.margin-left {
+    margin-left: $base-unit;
+}
+
+// Padding Classes
+%pad-bottom,
+.pad-bottom {
+  padding-bottom: $base-unit;
+}
+
+%pad-top,
+.pad-top {
+  padding-top: $base-unit;
+}
+
+%pad-left,
+.pad-left {
+  padding-left: $base-unit;
+}
+
+%pad-right,
+.pad-right {
+  padding-right: $base-unit;
+}
+
+%pad-all,
+.pad-all {
+  padding: $base-unit;
+}
+
+// =======================================
+// Display Extends
+// =======================================
+.block {
+    display: block;
+}
+.inline-block {
+    display: inline-block;
+}
+.inline {
+    display: inline;
+}
+
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
