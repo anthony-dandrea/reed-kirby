@@ -1,5 +1,9 @@
+// Import base
 @import 'base/variables';
 @import 'base/typography';
+
+// Import components
+@import 'components/iframe';
 
 body {
     background-color: #eee !important;

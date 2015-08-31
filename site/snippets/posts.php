@@ -4,8 +4,6 @@
 
 <?php foreach($articles as $article): ?>
 
-<p><?php echo $articles->pagination()->pages() ?> Pages</p>
-
 <article>
   <h1><?php echo html($article->title()) ?></h1>
   <p><?php echo $article->text()->kirbytext() ?></p>
@@ -27,7 +25,7 @@
 </nav>
 <?php endif ?>
 
-<hr><hr>
+
 
 
 
