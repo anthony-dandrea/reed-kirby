@@ -1,3 +1,7 @@
+<a class="logo" href="<?php echo url() ?>">
+    <img src="<?php echo url('assets/images/reedlogo.png') ?>" alt="<?php echo $site->title()->html() ?>" />
+</a>
+
 <ul>
   <?php foreach($pages->visible() as $p): ?>
   <li>

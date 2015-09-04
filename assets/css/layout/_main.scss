@@ -1,3 +1,12 @@
 .main {
     background-color: rgba(255,255,255,.75);
+    border-radius: 5px;
+    border: solid 2px #fff;
+}
+
+.container-padding {
+    padding: 1em 1em;
+    @include breakpoint($small-screen) {
+        padding: 3em 2em;
+    }
 }

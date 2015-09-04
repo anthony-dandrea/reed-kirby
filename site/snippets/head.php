@@ -23,3 +23,4 @@
 
 <div class="bg-image">
   <div class="bg-texture">
+    <div class="row container-padding">
