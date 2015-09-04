@@ -1,8 +1,10 @@
 .bg-image {
     background-image: url('/assets/images/wheel-bg.jpg');
     background-size: cover;
+    min-height: 100vh;
 }
 
 .bg-texture {
+    min-height: 100vh;
     background-image: url('/assets/images/texture.png');
 }

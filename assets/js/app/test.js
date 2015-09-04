@@ -1,1 +1,2 @@
-console.log('loaded');
+paypal.minicart.render();
+console.log('minicart loaded');

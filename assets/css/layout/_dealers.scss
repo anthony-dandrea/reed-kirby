@@ -1,0 +1,9 @@
+.dealers p {
+    display: inline-block;
+    width: 100%;
+    margin: 1em;
+    vertical-align: top;
+    @include breakpoint(370px) {
+        width: 39%;
+    }
+}

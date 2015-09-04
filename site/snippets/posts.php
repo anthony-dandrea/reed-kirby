@@ -1,11 +1,9 @@
-<h1>POSTS</h1>
-
 <?php $articles = page('posts')->children()->visible()->paginate(5) ?>
 
 <?php foreach($articles as $article): ?>
 
 <article>
-  <h1><?php echo html($article->title()) ?></h1>
+  <h3><?php echo html($article->title()) ?></h3>
   <p><?php echo $article->text()->kirbytext() ?></p>
 </article>
 
@@ -24,8 +22,3 @@
 
 </nav>
 <?php endif ?>
-
-
-
-
-

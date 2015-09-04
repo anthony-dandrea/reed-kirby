@@ -38,6 +38,7 @@ gulp.task('styles', function() {
 // watch files for change
 gulp.task('watch', function(){
   gulp.watch('./assets/css/**/*.scss', ['styles']);
+  gulp.watch('./assets/css/*.scss', ['styles']);
   gulp.watch('./assets/js/app/*.js', ['scripts']);
 });
 
