@@ -1,10 +1,18 @@
-<!-- FUCK this wont work =-/ maybe subpage options or just fuck it. probably just fuck it. -->
+<!-- Maybe will work with this loop, nah -->
+<?php $opts = ['os0', 'os1', 'os2'] ?>
+<?php foreach($opts as $opt): ?>
+    <p><?php echo $opt ?></p>
+<?php endforeach ?>
+
 <ul>
 <!-- This shit will get tricky with kirby blueprint inputs  -->
+<!-- This is bad, need to refactor -->
     <li>
-        <label>
+        <label>select1option2name
             <select name="os0"> <!-- will probably have to customize this name somehow-->
-                <option value="Black"><?php echo html($product->price()) ?></option> <!-- select1option1name -->
+                <?php if(!$product->select1option1name()->related()->empty()): ?>
+                    <option value="<?php echo html($product->select1option1name()) ?>"><?php echo html($product->select1option1name()) ?></option> <!-- select1option1name -->
+                <?php endif ?>
                 <option value="Grey">Grey</option> <!-- select1option2name -->
             </select>
         </label>
@@ -15,3 +23,4 @@
         <input type="hidden" name="option_amount1" value="0.00">
     </li>
 </ul>
+

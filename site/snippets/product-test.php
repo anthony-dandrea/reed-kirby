@@ -18,7 +18,6 @@
     </fieldset>
 </form> -->
 
-<p>wnieqfejlsm</p>
 
 <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
     <input type="hidden" name="cmd" value="_cart">

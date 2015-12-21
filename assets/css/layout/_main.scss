@@ -1,5 +1,12 @@
+h1 {
+  font-size: 1.5em;
+  @include breakpoint($lap-small) {
+    font-size: 2em;
+  }
+}
+
 .main {
-    background-color: rgba(255,255,255,.75);
+    background-color: $bg;
     border-radius: 5px;
     border: solid 2px #fff;
 }

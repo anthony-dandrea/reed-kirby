@@ -1,5 +1,5 @@
 <?php snippet('head') ?>
-<nav class="hide-for-small-only medium-4 large-3 columns">
+<nav class="medium-4 large-3 columns">
     <?php snippet('menu') ?>
 </nav>
 <main class="main dealers small-12 medium-8 large-9 columns">
