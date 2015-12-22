@@ -6,32 +6,20 @@
     - data-coupon form
     - data-coupon-code text input field
 */
+
 $(function() {
-    $('[data-coupon]').on('submit', function(e) {
-        e.preventDefault();
-        var couponCode = $(this).find('[data-coupon-code]').val();
-        $.getJSON('assets/data.json', function(data) {
-            var coupons = data.coupons,
-                amount  = null,
-                valid   = false;
-
-            $.each(coupons, function(idx, val) {
-                if (idx == couponCode) {
-                    valid = true;
-                    amount = val;
-                    return false; // breaks out of loop
-                }
-            });
-
-            if(valid) {
-                // amount: value to discount
-                // Add discount somehow
-            } else {
-                alert('Coupon is invalid.');
-            }
-
-        }).fail(function() {
-            alert('Server error, failed to check coupon.');
-        });
+  $('[data-coupon]').on('submit', function(e) {
+    e.preventDefault();
+    var couponCode = $(this).find('[data-coupon-code]').val();
+    $.post('assets/coupons.php', {'coupon': couponCode}, function(data) {
+      data = JSON.parse(data);
+      if (data.success) {
+        // add discount for data.value here
+      } else {
+        alert(data.message);
+      }
+    }).fail(function() {
+        alert('Server error, failed to check coupon.');
     });
+  });
 });
