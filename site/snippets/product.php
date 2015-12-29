@@ -20,16 +20,9 @@
             <?php echo $product->description()->kirbytext() ?>
         </div>
         <!-- ^ kirbytext -->
-        <?php if(!$product->select1option1name()->related()->empty()): ?>
-            <?php snippet('product-options') ?>
-        <?php endif ?>
-
-
 
         <input type="submit" name="submit" value="Add to cart" class="button">
     </form>
 </div>
 
 <?php endforeach ?>
-
-

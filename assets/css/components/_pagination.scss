@@ -1,0 +1,16 @@
+.pagination {
+  a {
+    color: rgba(0, 0, 0, 0.79);
+    text-decoration: none;
+    &:hover {
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+  .fa {
+    position: relative;
+    top: 1px;
+  }
+  .prev {
+    float: right;
+  }
+}

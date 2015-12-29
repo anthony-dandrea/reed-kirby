@@ -13,9 +13,6 @@ Todo:
 - GA + Events?
 - Lightbox for imgs?
 - Contact link
-- Noscript/ie alert copy
-- Social links
-- Insta feed API
 - assets/data.json should probably be data.php returning json from a POST with coupCode
 - Need to rethink how to handle these product options so I'm not doing 15*2 if statements
 - See if we want different font

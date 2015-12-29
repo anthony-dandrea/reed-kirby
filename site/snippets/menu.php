@@ -11,3 +11,18 @@
   </li>
   <?php endforeach ?>
 </ul>
+
+<div class="row social-icons">
+  <a class="columns small-3" href="//www.facebook.com/pages/REED-Wheel-Co/346632392084633" target="_blank">
+    <i class="fa fa-facebook-official"></i>
+  </a>
+  <a class="columns small-3" href="//www.instagram.com/reedwheels/" target="_blank">
+    <i class="fa fa-instagram"></i>
+  </a>
+  <a class="columns small-3" href="//vimeo.com/user13822894" target="_blank">
+    <i class="fa fa-vimeo-square"></i>
+  </a>
+  <a class="columns small-3" href="//www.youtube.com/user/philthy1009" target="_blank">
+    <i class="fa fa-youtube-square"></i>
+  </a>
+</div>

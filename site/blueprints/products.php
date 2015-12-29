@@ -6,5 +6,5 @@ pages:
 files: false
 fields:
   title:
-    label: Title (ignore)
+    label: Title
     type:  text

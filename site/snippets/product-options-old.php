@@ -1,9 +1,3 @@
-<!-- Maybe will work with this loop, nah -->
-<?php $opts = ['os0', 'os1', 'os2'] ?>
-<?php foreach($opts as $opt): ?>
-    <p><?php echo $opt ?></p>
-<?php endforeach ?>
-
 <ul>
 <!-- This shit will get tricky with kirby blueprint inputs  -->
 <!-- This is bad, need to refactor -->
@@ -23,4 +17,3 @@
         <input type="hidden" name="option_amount1" value="0.00">
     </li>
 </ul>
-
