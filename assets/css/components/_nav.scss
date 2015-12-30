@@ -57,7 +57,8 @@ $navbeige: #9A9999;
     text-transform: uppercase;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    &.active {
+    transition: color 0.3s;
+    &.active, &:hover {
       color: $white;
     }
   }

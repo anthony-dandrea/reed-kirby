@@ -7,10 +7,14 @@ files:
   type:
     - image
 fields:
-  Title:
+  title:
     label: Name
     type:  text
     required: true
+  pic:
+    label: Image (link to uploaded image here)
+    type:  textarea
+    placeholder: "(image: your_pic.jpg)"
   description:
     label: Description (http://getkirby.com/docs/content/text)
     type:  textarea
@@ -18,6 +22,15 @@ fields:
     label: Price
     type: number
     required: true
+  instock:
+    label: In Stock
+    type: checkbox
+    text: Is item still available?
+  line-1:
+    type: line
+  select1:
+    label: 1st Select Label
+    type: text
   select1option1name:
     label: Select 1 Option 1 Name
     type: text
@@ -38,6 +51,15 @@ fields:
     label: Select 1 Option 5 Name
     type: text
     width: 1/2
+  select1option6name:
+    label: Select 1 Option 6 Name
+    type: text
+    width: 1/2
+  line-2:
+    type: line
+  select2:
+    label: 2nd Select Label
+    type: text
   select2option1name:
     label: Select 2 Option 1 Name
     type: text
@@ -58,6 +80,15 @@ fields:
     label: Select 2 Option 5 Name
     type: text
     width: 1/2
+  select2option6name:
+    label: Select 2 Option 6 Name
+    type: text
+    width: 1/2
+  line-3:
+    type: line
+  select3:
+    label: 3rd Select Label
+    type: text
   select3option1name:
     label: Select 3 Option 1 Name
     type: text
@@ -76,5 +107,9 @@ fields:
     width: 1/2
   select3option5name:
     label: Select 3 Option 5 Name
+    type: text
+    width: 1/2
+  select3option6name:
+    label: Select 3 Option 6 Name
     type: text
     width: 1/2

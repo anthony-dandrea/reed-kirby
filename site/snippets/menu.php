@@ -1,5 +1,5 @@
 <a class="logo" href="<?php echo url() ?>">
-    <img src="<?php echo url('assets/images/reedlogo.png') ?>" alt="<?php echo $site->title()->html() ?>" />
+  <img src="<?php echo url('assets/images/reedlogo.png') ?>" alt="<?php echo $site->title()->html() ?>" />
 </a>
 
 <a href="#" class="menu-btn" data-menu-btn>Menu</a>
@@ -10,6 +10,9 @@
     <a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
   </li>
   <?php endforeach ?>
+  <li>
+    <a href="mailto:info@reedwheels.com">Contact</a>
+  </li>
 </ul>
 
 <div class="row social-icons">
