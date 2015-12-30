@@ -1,0 +1,13 @@
+.btn {
+  background: transparent;
+  color: $black;
+  border: solid 1px $white;
+  transition: background 0.3;
+  &:hover {
+    background: $white;
+  }
+}
+.disabled, .disabled:hover {
+  color: lighten($black, 20%);
+  background: darken($white, 30%);
+}

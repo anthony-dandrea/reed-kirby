@@ -23,12 +23,9 @@ Todo:
 - Products/Cart
 - GA + Events?
 - Lightbox for imgs?
-- Contact link
 - assets/data.json should probably be data.php returning json from a POST with coupCode
-- Need to rethink how to handle these product options so I'm not doing 15*2 if statements
 - See if we want different font
 - MailKimp
-- Accent bg img for visibility
 
 Product Notes:
 Make option field one with various commas separated options, turn

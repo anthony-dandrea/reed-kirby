@@ -8,3 +8,16 @@
     min-height: 100vh;
     background-image: url('/assets/images/texture.png');
 }
+
+.bg-accent {
+  @include breakpoint($lap-small) {
+    background: url('/assets/images/accent.png') 0px 0px no-repeat;
+    height: 900px;
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+    z-index: 0;
+    opacity: .5;
+  }
+}

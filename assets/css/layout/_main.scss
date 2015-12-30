@@ -6,10 +6,10 @@ h1 {
 }
 
 .main {
-    background-color: $bg;
-    border-radius: 5px;
-    border: solid 2px #fff;
-    padding-bottom: 1em;
+  background-color: $bg;
+  border-radius: 5px;
+  border: solid 2px #fff;
+  padding-bottom: 1em;
 }
 
 .article {
@@ -20,17 +20,17 @@ h1 {
 }
 
 .container-padding {
-    padding: 1em 1em;
-    @include breakpoint($small-screen) {
-        padding: 3em 2em;
-    }
+  padding: 1em 1em;
+  @include breakpoint($small-screen) {
+    padding: 3em 2em;
+  }
 }
 
 img {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 
 * {
-    line-height: normal;
+  line-height: normal;
 }

@@ -2,7 +2,7 @@ Title: Dealers
 
 ----
 
-Text:
+Text: 
 
 (link: http://www.upriseskateboards.com/ text: Uprise Skateshop target: _blank)
 1820 N. Milwaekee Ave.
@@ -40,7 +40,6 @@ San Mateo, CA 94401
 924 W. Wilson Ave.
 Chicago, IL 60640
 
-
 (link: http://smalltownskates.com/ text: SMLTWN Skates target: _blank)
 229 E. Lincoln Highway
 DeKalb, IL 60115
@@ -57,27 +56,42 @@ Philadelphia, PA 19123
 111 1/2 W. North Street
 Normal, IL 61761
 
-(link: http://www.chiipss.com/ text: Chiipss target: _blank)
-10229 Joseph Campau
-Hamtramck, MI 48212
+(link: http://creamcityskatepark.com/ text: Cream City Skatepark target: _blank)
+5560 N. Park Dr.
+Butler, WI 53007
 
 (link: http://peopleskateandsnowboard.com/ text: People Skate and Snowboard target: _blank)
 3375 Orchard Lake Rd.
 Keego Harbor, MI 48320
 
-
-(link: http://creamcityskatepark.com/ text: Cream City Skatepark target: _blank)
-5560 N. Park Dr.
-Butler, WI 53007
+(link: http://plusskateshop.com/Default.asp text: PLUS Skateshop target: _blank)
+186 Miracle Strip Pkwy SE
+Fort Walton Bch, FL 32548
 
 (link: http://www.thepremierstore.com/ text: Premier target: _blank)
 14 Weston St SE
 Grand Rapids, MI 49503
 
-(link: http://plusskateshop.com/Default.asp text: PLUS Skateshop target: _blank)
-186 Miracle Strip Pkwy SE
-Fort Walton Bch, FL 32548
+(link: http://emagenetwork.com/ text: Emage target: _blank)
+1620 Platte St
+Denver, CO 80202
 
 (link: http://www.a2bboardshop.com/ text: A2B Boardshop target: _blank)
 4238 N. Arlington Heights Rd.
 Arlington Heights, IL 60004
+
+(link: http://metaskate.com/ text: Meta target: _blank)
+1505 Pearl St #103
+Boulder, CO 80302
+
+(link: http://skatecrisis.com/ text: Crisis target: _blank)
+6821 W 120th Ave
+Broomfield, CO 80020
+
+(link: http://www.thedenvershop.com/ text: Brothers Boards target: _blank)
+15446 E Hampden Ave
+Aurora, CO 80013
+
+(link: http://holisticskateshop.com/ text: Holistic target: _blank)
+516 Penn Ave
+West Reading, PA 19611

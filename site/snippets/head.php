@@ -15,6 +15,7 @@
   <?php echo css('assets/css/site.min.css') ?>
 </head>
 <body>
+<div class="bg-accent"></div>
 <div class="bg-image">
   <div class="bg-texture">
     <div class="row container-padding">

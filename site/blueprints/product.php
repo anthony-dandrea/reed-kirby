@@ -21,6 +21,7 @@ fields:
   price:
     label: Price
     type: number
+    placeholder: 1234.00
     required: true
   instock:
     label: In Stock

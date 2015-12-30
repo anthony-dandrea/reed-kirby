@@ -4,6 +4,18 @@ Title: Team
 
 Text: 
 
+**Mike Marks**
+
+(image: mikemarks.jpg link: mikemarks.jpg)
+
+(youtube: https://www.youtube.com/watch?v=AUSFbFk_blc)
+
+**Sam Heird**
+
+(image: samheird.png link: samheird.png)
+
+(youtube: https://www.youtube.com/watch?v=9EfdlifQXQw)
+
 **Pat Devine**
 
 (image: patdevinebluntweb_large.jpg link: patdevinebluntweb_small.jpg)

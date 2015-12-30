@@ -1,4 +1,4 @@
-<?php $products = page('shop')->children()->visible() ?>
+<?php $products = page('shop')->children()->visible()->paginate(5) ?>
 
 <?php foreach($products as $product): ?>
 <div class="product">
@@ -26,7 +26,7 @@
 
         <!-- Option 1 -->
         <?php if(!$product->select1()->empty()): ?>
-          <p><?php echo html($product->select1()) ?></p>
+          <p class="select-name"><?php echo html($product->select1()) ?></p>
           <select name="os0">
             <?php if(!$product->select1option1name()->empty()): ?>
               <option value="<?php echo html($product->select1option1name()) ?>">
@@ -71,7 +71,7 @@
 
         <!-- Option 2 -->
         <?php if(!$product->select2()->empty()): ?>
-          <p><?php echo html($product->select2()) ?></p>
+          <p class="select-name"><?php echo html($product->select2()) ?></p>
           <select name="os1">
             <?php if(!$product->select2option1name()->empty()): ?>
               <option value="<?php echo html($product->select2option1name()) ?>">
@@ -116,7 +116,7 @@
 
         <!-- Option 3 -->
         <?php if(!$product->select3()->empty()): ?>
-          <p><?php echo html($product->select3()) ?></p>
+          <p class="select-name"><?php echo html($product->select3()) ?></p>
           <select name="os2">
             <?php if(!$product->select3option1name()->empty()): ?>
               <option value="<?php echo html($product->select3option1name()) ?>">
@@ -160,12 +160,23 @@
         <!-- End Option 3 -->
 
         <?php if($product->instock()->bool()): ?>
-          <input type="submit" name="submit" value="Add to Cart" class="button">
+          <input type="submit" name="submit" value="Add to Cart" class="btn margin-top">
         <?php else: ?>
-          <input type="submit" name="submit" value="Out of Stock" disabled="disabled" class="button">
+          <input type="submit" name="submit" value="Out of Stock" disabled="disabled" class="btn margin-top disabled">
         <?php endif ?>
       </div> <!-- end desc col -->
     </div> <!-- end row -->
   </form>
 </div>
 <?php endforeach ?>
+
+<?php if($products->pagination()->hasPages()): ?>
+  <nav class="pagination">
+    <?php if($products->pagination()->hasNextPage()): ?>
+    <a class="next" href="<?php echo $products->pagination()->nextPageURL() ?>"><i class="fa fa-chevron-left"></i> more products</a>
+    <?php endif ?>
+    <?php if($products->pagination()->hasPrevPage()): ?>
+    <a class="prev" href="<?php echo $products->pagination()->prevPageURL() ?>">newer products <i class="fa fa-chevron-right"></i></a>
+    <?php endif ?>
+  </nav>
+<?php endif ?>
