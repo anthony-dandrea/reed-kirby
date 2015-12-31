@@ -101,4 +101,4 @@ Select3:
 
 ----
 
-Pic: (image: twill_snapback_hats.jpg)
+Pic: (image: 19_hats_thumb.jpg link: 19_hats.jpg)

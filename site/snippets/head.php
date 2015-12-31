@@ -7,12 +7,13 @@
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
   <meta name="description" content="<?php echo $site->description()->html() ?>">
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
-  <link rel="icon" href="<?php echo url('assets/images/favicon.ico') ?>" type="image/x-icon" />
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
   <meta content="Reed Wheels" name="author">
   <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='//fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,900,100' rel="stylesheet">
-  <?php echo css('assets/css/site.min.css') ?>
+  <link href='//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css' rel="stylesheet">
+  <link href='/assets/css/site.min.css' rel="stylesheet">
 </head>
 <body>
 <div class="bg-accent"></div>

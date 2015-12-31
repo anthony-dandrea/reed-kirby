@@ -1,5 +1,5 @@
 <a class="logo" href="<?php echo url() ?>" data-ga-event="logo" data-ga-action="btnclick" data-ga-category="nav">
-  <img src="<?php echo url('assets/images/reedlogo.png') ?>" alt="<?php echo $site->title()->html() ?>" />
+  <img src="/assets/images/reedlogo.png" alt="<?php echo $site->title()->html() ?>" />
 </a>
 
 <a href="#" class="menu-btn" data-menu-btn data-ga-event="menutoggle" data-ga-action="btnclick" data-ga-category="nav">Menu</a>
