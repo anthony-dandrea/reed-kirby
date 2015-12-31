@@ -11,13 +11,20 @@
   }
 }
 
+.coupon-input {
+  width: 140px;
+}
+
 // Lightbox overrides
-#PPMiniCart {
+body #PPMiniCart {
   width: 100%;
+  left: auto !important;
   ul {
     max-width: 100%;
   }
   form {
     max-width: 100%;
+    margin: auto;
+    display: block;
   }
 }

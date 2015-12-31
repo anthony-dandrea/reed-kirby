@@ -160,7 +160,7 @@
         <!-- End Option 3 -->
 
         <?php if($product->instock()->bool()): ?>
-          <input type="submit" name="submit" value="Add to Cart" class="btn margin-top">
+          <input type="submit" name="submit" value="Add to Cart" class="btn margin-top" data-ga-event="add <?php echo html($product->title()) ?>" data-ga-action="btnclick" data-ga-category="cart">
         <?php else: ?>
           <input type="submit" name="submit" value="Out of Stock" disabled="disabled" class="btn margin-top disabled">
         <?php endif ?>
@@ -173,10 +173,14 @@
 <?php if($products->pagination()->hasPages()): ?>
   <nav class="pagination">
     <?php if($products->pagination()->hasNextPage()): ?>
-    <a class="next" href="<?php echo $products->pagination()->nextPageURL() ?>"><i class="fa fa-chevron-left"></i> more products</a>
+    <a class="next" href="<?php echo $products->pagination()->nextPageURL() ?>" data-ga-event="moreproducts" data-ga-action="btnclick" data-ga-category="paginate">
+      <i class="fa fa-chevron-left"></i> more products
+    </a>
     <?php endif ?>
     <?php if($products->pagination()->hasPrevPage()): ?>
-    <a class="prev" href="<?php echo $products->pagination()->prevPageURL() ?>">newer products <i class="fa fa-chevron-right"></i></a>
+    <a class="prev" href="<?php echo $products->pagination()->prevPageURL() ?>" data-ga-event="newerproducts" data-ga-action="btnclick" data-ga-category="paginate">
+      newer products <i class="fa fa-chevron-right"></i>
+    </a>
     <?php endif ?>
   </nav>
 <?php endif ?>

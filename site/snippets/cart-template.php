@@ -54,14 +54,18 @@ var totalFormat = { format: true, showCode: true };
     <div class="minicart-footer">
         <% if (hasItems) { %>
           <div class="row pad-bottom">
-            <div class="small-6 columns">
-              <input data-coupon type="text" placeholder="Coupon Code"/>
+            <div class="small-5 columns">
+              <input class="coupon-input" data-coupon type="text" placeholder="Coupon Code"/>
             </div>
-            <div class="small-6 columns">
+            <div class="small-7 columns right-align">
               <% if (localStorage.coupon != 0) { %>
-                <div class="btn inline-block disabled" data-coupon-submit>Coupon Already Used</div>
+                <div class="btn inline-block disabled" data-coupon-submit>
+                  Coupon Already Used
+                </div>
               <% } else { %>
-                <div class="btn inline-block" data-coupon-submit>Submit Coupon</div>
+                <div class="btn inline-block" data-coupon-submit data-ga-event="submitcoupon" data-ga-action="btnclick" data-ga-category="cart">
+                  Submit Coupon
+                </div>
               <% } %>
             </div>
           </div>
@@ -69,7 +73,9 @@ var totalFormat = { format: true, showCode: true };
             <div class="minicart-subtotal">
               <%= config.strings.subtotal %> $ <span id="cart-total"><%= cart.total() - localStorage.coupon %></span>
             </div>
-            <button class="minicart-submit" type="submit" data-minicart-alt="<%= config.strings.buttonAlt %>">Checkout</button>
+            <button class="minicart-submit" type="submit" data-minicart-alt="<%= config.strings.buttonAlt %>" data-ga-event="checkout" data-ga-action="btnclick" data-ga-category="cart">
+              Checkout
+            </button>
         <% } else { %>
             <p class="minicart-empty-text"><%= config.strings.empty %></p>
         <% } %>
