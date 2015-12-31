@@ -29,3 +29,10 @@
     <i class="fa fa-youtube-square"></i>
   </a>
 </div>
+
+<div class="center-align">
+  <div data-cart class="cart">
+    <i class="fa fa-shopping-cart"></i>
+    &nbsp;$<span data-cart-count></span>
+  </div>
+</div>

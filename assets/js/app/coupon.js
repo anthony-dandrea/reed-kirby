@@ -1,20 +1,25 @@
-/*
-    WIP, need to handle coupon code inputs and discounting of an item in the cart.
-    Will probably need to use product.discount(config)
-
-    Need to create:
-    - data-coupon form
-    - data-coupon-code text input field
-*/
-
+// Set coupon if not set
+if (!localStorage.coupon) {
+  localStorage.coupon = 0;
+}
 $(function() {
-  $('[data-coupon]').on('submit', function(e) {
+  $(document).on('click', '[data-coupon-submit]', function(e) {
     e.preventDefault();
-    var couponCode = $(this).find('[data-coupon-code]').val();
+    // Check coupon isn't already used
+    if (localStorage.coupon != 0) {
+      alert('Only one coupon per order.')
+      return;
+    }
+    var couponCode = $('[data-coupon]').val();
     $.post('assets/coupons.php', {'coupon': couponCode}, function(data) {
       data = JSON.parse(data);
+      console.log('coupon',data);
       if (data.success) {
-        // add discount for data.value here
+        $('[name="discount_amount_cart"]').val(data.value);
+        localStorage.coupon = data.value;
+        var newTotal = parseFloat($('#cart-total').text()) - data.value;
+        $('#cart-total').text(newTotal);
+        $(document).trigger('click');
       } else {
         alert(data.message);
       }
@@ -23,3 +28,11 @@ $(function() {
     });
   });
 });
+
+// Make sure enter not pressed while focused on coupon input
+$(window).keydown(function(e){
+   if(e.keyCode == 13 && $('[data-coupon]').is(':focus')) {
+     e.preventDefault();
+     return false;
+   }
+ });

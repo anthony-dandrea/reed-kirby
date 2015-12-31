@@ -1,7 +1,7 @@
 <?php
   // Array of active coupons
   $active_coupons = array(
-    "REED666" => 5
+    "REED420" => 5
   );
   // Only process POST requests.
   if ($_SERVER["REQUEST_METHOD"] == "POST") {

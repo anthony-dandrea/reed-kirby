@@ -2,6 +2,7 @@
   </div> <!-- End of bg-image -->
 </div> <!-- End of bg-texture -->
 
+<?php snippet('cart-template') ?>
 <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript">
     window.jQuery || document.write('<script type="text/javascript" src="assets/js/vendor/jquery-2.1.4.min.js">\x3C/script>')

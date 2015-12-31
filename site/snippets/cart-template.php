@@ -1,0 +1,83 @@
+<script type="text/template" id="cart-template">
+<%
+var items = cart.items();
+var settings = cart.settings();
+var hasItems = !!items.length;
+var priceFormat = { format: true, currency: cart.settings("currency_code") };
+var totalFormat = { format: true, showCode: true };
+%>
+<form method="post" class="<% if (!hasItems) { %>minicart-empty<% } %>" action="<%= config.action %>" target="<%= config.target %>">
+    <button type="button" class="minicart-closer">&times;</button>
+    <ul>
+        <% for (var i= 0, idx = i + 1, len = items.length; i < len; i++, idx++) { %>
+        <li class="minicart-item">
+            <div class="minicart-details-name">
+                <a class="minicart-name" href="<%= items[i].get("href") %>"><%= items[i].get("item_name") %></a>
+                <ul class="minicart-attributes">
+                    <% if (items[i].get("item_number")) { %>
+                    <li>
+                        <%= items[i].get("item_number") %>
+                        <input type="hidden" name="item_number_<%= idx %>" value="<%= items[i].get("item_number") %>" />
+                    </li>
+                    <% } %>
+                    <% if (items[i].discount()) { %>
+                    <li>
+                        <%= config.strings.discount %> <%= items[i].discount(priceFormat) %>
+                        <input type="hidden" name="discount_amount_<%= idx %>" value="<%= items[i].discount() %>" />
+                    </li>
+                    <% } %>
+                    <% for (var options = items[i].options(), j = 0, len2 = options.length; j < len2; j++) { %>
+                        <li>
+                            <%= options[j].key %>: <%= options[j].value %>
+                            <input type="hidden" name="on<%= j %>_<%= idx %>" value="<%= options[j].key %>" />
+                            <input type="hidden" name="os<%= j %>_<%= idx %>" value="<%= options[j].value %>" />
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+            <div class="minicart-details-quantity">
+                <input class="minicart-quantity" data-minicart-idx="<%= i %>" name="quantity_<%= idx %>" type="text" pattern="[0-9]*" value="<%= items[i].get("quantity") %>" autocomplete="off" />
+            </div>
+            <div class="minicart-details-remove">
+                <button type="button" class="minicart-remove" data-minicart-idx="<%= i %>">&times;</button>
+            </div>
+            <div class="minicart-details-price">
+                <span class="minicart-price"><%= items[i].total(priceFormat) %></span>
+            </div>
+            <input type="hidden" name="item_name_<%= idx %>" value="<%= items[i].get("item_name") %>" />
+            <input type="hidden" name="amount_<%= idx %>" value="<%= items[i].amount() %>" />
+            <input type="hidden" name="shipping_<%= idx %>" value="<%= items[i].get("shipping") %>" />
+            <input type="hidden" name="shipping2_<%= idx %>" value="<%= items[i].get("shipping2") %>" />
+        </li>
+        <% } %>
+    </ul>
+    <div class="minicart-footer">
+        <% if (hasItems) { %>
+          <div class="row pad-bottom">
+            <div class="small-6 columns">
+              <input data-coupon type="text" placeholder="Coupon Code"/>
+            </div>
+            <div class="small-6 columns">
+              <% if (localStorage.coupon != 0) { %>
+                <div class="btn inline-block disabled" data-coupon-submit>Coupon Already Used</div>
+              <% } else { %>
+                <div class="btn inline-block" data-coupon-submit>Submit Coupon</div>
+              <% } %>
+            </div>
+          </div>
+          <input type="hidden" name="discount_amount_cart" value="<%= localStorage.coupon %>" />
+            <div class="minicart-subtotal">
+              <%= config.strings.subtotal %> $ <span id="cart-total"><%= cart.total() - localStorage.coupon %></span>
+            </div>
+            <button class="minicart-submit" type="submit" data-minicart-alt="<%= config.strings.buttonAlt %>">Checkout</button>
+        <% } else { %>
+            <p class="minicart-empty-text"><%= config.strings.empty %></p>
+        <% } %>
+    </div>
+    <input type="hidden" name="cmd" value="_cart" />
+    <input type="hidden" name="upload" value="1" />
+    <% for (var key in settings) { %>
+        <input type="hidden" name="<%= key %>" value="<%= settings[key] %>" />
+    <% } %>
+</form>
+</script>

@@ -1,13 +1,18 @@
 .btn {
-  background: transparent;
-  color: $black;
+  background: $green;
+  cursor: pointer;
+  color: $white;
   border: solid 1px $white;
+  padding: 0.2em 0.4em;
+  border-radius: 2px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   transition: background 0.3;
   &:hover {
-    background: $white;
+    background: lighten($green, 15%);
   }
 }
 .disabled, .disabled:hover {
+  cursor: not-allowed;
   color: lighten($black, 20%);
   background: darken($white, 30%);
 }
