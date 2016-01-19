@@ -104,3 +104,7 @@ Select3option5name:
 ----
 
 Select3option6name: 
+
+----
+
+Couponenabled: 1

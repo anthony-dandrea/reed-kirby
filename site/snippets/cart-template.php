@@ -59,7 +59,7 @@ var totalFormat = { format: true, showCode: true };
             </div>
             <div class="small-7 columns right-align">
               <% if (localStorage.coupon != 0) { %>
-                <div class="btn inline-block disabled" data-coupon-submit>
+                <div class="btn inline-block disabled" data-coupon-submit data-coupon-submit>
                   Coupon Already Used
                 </div>
               <% } else { %>

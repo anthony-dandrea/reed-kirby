@@ -13,4 +13,5 @@ $(function() {
       $(this).fancybox();
     }
   });
+  $('[data-fancybox]').fancybox();
 });

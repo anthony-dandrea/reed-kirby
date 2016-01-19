@@ -33,8 +33,15 @@
 </div>
 
 <div class="center-align">
-  <div data-cart class="cart" data-ga-event="shopping cart click" data-ga-action="btnclick" data-ga-category="cart">
+  <div data-cart class="black-box" data-ga-event="shoppingnav" data-ga-action="btnclick" data-ga-category="cart">
     <i class="fa fa-shopping-cart"></i>
     &nbsp;$<span data-cart-count></span>
   </div>
 </div>
+
+<!-- <div class="center-align">
+  <a href="#data-mailchimp-form" data-fancybox data-mailchimp-form class="black-box" data-ga-event="subscribe" data-ga-action="btnclick" data-ga-category="mailchimp">
+    <i class="fa fa-newspaper-o"></i>
+    Subscribe
+  </a>
+</div> -->

@@ -1,5 +1,5 @@
 $navbreakpnt: 642px; // based on fdn
-$navbeige: #9A9999;
+$navbeige: #CFCFCF;
 
 .logo {
   display: block;
@@ -82,5 +82,19 @@ $navbeige: #9A9999;
     &:before {
       right: 0;
     }
+  }
+}
+
+.black-box {
+  background-color: $black;
+  color: $white;
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  margin: auto;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  &:hover {
+    background-color: lighten($black, 15%);
   }
 }

@@ -27,6 +27,10 @@ fields:
     label: In Stock
     type: checkbox
     text: Is item still available?
+  couponenabled:
+    label: Coupon Enabled
+    type: checkbox
+    text: If this item is in the cart a coupon can be used.
   line-1:
     type: line
   select1:

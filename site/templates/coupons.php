@@ -1,7 +1,11 @@
 <?php
-  // Array of active coupons
+  // Janky array of active coupons
   $active_coupons = array(
-    "REED420" => 5
+    (string)$page->code1() => (string)$page->price1(),
+    (string)$page->code2() => (string)$page->price2(),
+    (string)$page->code3() => (string)$page->price3(),
+    (string)$page->code4() => (string)$page->price4(),
+    (string)$page->code5() => (string)$page->price5()
   );
   // Only process POST requests.
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -31,5 +35,6 @@
     http_response_code(403);
     $response = array('success' => false, 'message' => 'An error occurred.');
     echo json_encode($response);
+    exit;
   }
 ?>

@@ -12,6 +12,9 @@
     <input type="hidden" name="currency_code" value="USD">
     <input type="hidden" name="return" value="http://www.reedwheels.com/?success">
     <input type="hidden" name="cancel_return" value="http://www.reedwheels.com/?cancel">
+    <?php if($product->couponenabled()->bool()): ?>
+      <input type="hidden" name="coupon_enabled" value="true">
+    <?php endif ?>
 
     <div class="row">
       <div class="small-12 medium-8 columns">
